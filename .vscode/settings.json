@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "3D-Graphics-and-Game-Programming.sln"
+    "dotnet.defaultSolution": "HW2.sln"
 }
