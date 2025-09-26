@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     //private Vector2 movementValue;
     //private float lookValue;
 
-    private void Awaek()
+    private void Awake()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked; 
