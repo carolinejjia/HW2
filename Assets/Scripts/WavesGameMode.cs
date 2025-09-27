@@ -9,7 +9,7 @@ public class WavesGameMode : MonoBehaviour
     [SerializeField] private Life playerLife;
     [SerializeField] private Life playerBaseLife;
 
-    void Awake()
+    void Start()
     {
         playerLife.onDeath.AddListener(OnPlayerOrBaseDied);
         playerBaseLife.onDeath.AddListener(OnPlayerOrBaseDied);

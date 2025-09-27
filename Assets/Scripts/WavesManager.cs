@@ -25,6 +25,7 @@ public class WavesManager : MonoBehaviour
     public void AddWave(WaveSpawner wave)
     {
         waves.Add(wave);
+        print("wave added");
         onChanged.Invoke();
     }
 
