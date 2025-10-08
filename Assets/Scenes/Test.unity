@@ -595,6 +595,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2234686515075632197, guid: e4acd62eb474c4632a00ed88f921fca8,
+        type: 3}
+      propertyPath: currentState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3078838007492615388, guid: e4acd62eb474c4632a00ed88f921fca8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -698,6 +703,7 @@ GameObject:
   - component: {fileID: 443170058}
   - component: {fileID: 443170057}
   - component: {fileID: 443170056}
+  - component: {fileID: 443170060}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -787,12 +793,43 @@ Transform:
   m_GameObject: {fileID: 443170055}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1522, y: -1.7213, z: 0.0681}
-  m_LocalScale: {x: 7.6244407, y: 1, z: 4.1265874}
+  m_LocalPosition: {x: 3.6758, y: -1.7213, z: -1.6619}
+  m_LocalScale: {x: 8.671276, y: 1, z: 7.586731}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &443170060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443170055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: ff16e3deda77a4e098f9b23a505c82ea, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &803568198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,10 +1304,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2341655862591465733, guid: e4acd62eb474c4632a00ed88f921fca8,
+    - target: {fileID: 2234686515075632197, guid: e4acd62eb474c4632a00ed88f921fca8,
         type: 3}
-      propertyPath: delay
-      value: 100
+      propertyPath: currentState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3078838007492615388, guid: e4acd62eb474c4632a00ed88f921fca8,
         type: 3}
@@ -1322,28 +1359,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4286638468095579768, guid: e4acd62eb474c4632a00ed88f921fca8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4286638468095579768, guid: e4acd62eb474c4632a00ed88f921fca8,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6320463244074417673, guid: e4acd62eb474c4632a00ed88f921fca8,
         type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 8967116643760091539, guid: e4acd62eb474c4632a00ed88f921fca8,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1038157053531577965, guid: e4acd62eb474c4632a00ed88f921fca8, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1514,8 +1535,8 @@ Transform:
   m_GameObject: {fileID: 1786061945}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.26, y: -0.25, z: -1.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.586, y: 0.097, z: -1.07}
+  m_LocalScale: {x: 1.6517576, y: 2.2287257, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
