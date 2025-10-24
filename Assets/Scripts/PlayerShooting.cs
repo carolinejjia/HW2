@@ -8,6 +8,7 @@ public class PlayerShooting : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject shootPoint;
+    public ParticleSystem muzzleEffect;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -27,6 +28,8 @@ public class PlayerShooting : MonoBehaviour
 
             clone.transform.position = shootPoint.transform.position;
             clone.transform.rotation = shootPoint.transform.rotation;
+
+            muzzleEffect.Play();
         }
     }
 }
