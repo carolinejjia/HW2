@@ -9,6 +9,7 @@ public class PlayerShooting : MonoBehaviour
     public GameObject prefab;
     public GameObject shootPoint;
     public ParticleSystem muzzleEffect;
+    public AudioSource shootSound;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -30,6 +31,7 @@ public class PlayerShooting : MonoBehaviour
             clone.transform.rotation = shootPoint.transform.rotation;
 
             muzzleEffect.Play();
+            shootSound.Play();
         }
     }
 }
